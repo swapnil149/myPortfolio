@@ -1,1 +1,76 @@
-
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Wedding Memories</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "myStyle.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+<body>
+    <div class = "container">
+        <div class = "header">
+            <div class = "companyLogo">
+                <img class = "logo" src="Images/WeddingMelodiesLogo.jpeg" alt = "Company Logo"/>
+            </div>
+            <div class = "topnav" id = "myTopnav">
+                <a class = "home" href="index.html">Home</a>
+                <a class = "team" href="Team.html">Team</a>
+                <a class = "songs" href="Songs.html">Songs</a>
+                <a class = "contactUs" href="ContactUs.html">Contact Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div class = "mainContent">
+            <div class = "banner">
+                <img src="Images/Banner.jpeg" alt="Banner Image"/>
+                <div class="bannerText">
+                    <div class = "text">Wedding Melodies</div>
+                    <div class = "subText">Melodies of Love, Forever in Our Hearts</div>
+                </div>
+            </div>
+            <div class = "aboutUs">
+                <p>
+                    Welcome to Wedding Melodies, your premier destination for enchanting music and 
+                    creating unforgettable moments. As a renowned music band, we have been serving the 
+                    Boston, Massachusetts area and its surrounding regions for over 25 years. Our 
+                    commitment to excellence and our passion for creating the perfect soundtrack
+                    make us the ideal choice for your special day.
+                </p>
+                <p>
+                    Experience the magic of Wedding Melodies as we create a symphony of love and 
+                    celebration on your wedding day. Contact us today to discuss your musical requirements,
+                    and let us weave the perfect melodies that will make your wedding a truly unforgettable event.
+                </p>
+            </div>
+        </div>
+        <div class = "footer">
+            <div class = copyrightText>
+                &#xa9 2023 Wedding Melodies Inc.
+            </div>
+            <div>
+                304 Newbury St &#9839 172, Boston, MA 02115
+            </div>
+            <div>
+                (617) 297-8854
+            </div>
+            <div>
+                contact@weddingmemories.com
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+</body>
