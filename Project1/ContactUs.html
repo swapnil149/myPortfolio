@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "myStyle.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <style>
+        .mainContent {
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+            align-items: center;
+        }
+
+        form {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        input[type=text], input[type=date], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        textarea {
+            height: 40px;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        .dateEvent {
+            width: auto;
+        }
+
+        input[type=submit] {
+            background-color: #4754a3;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+            width: 100%
+        }
+
+        input[type=submit]:hover {
+            background-color: #290d4a;
+        }
+
+        .submitButton {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        label {
+            width: 50%;
+            text-align: right;
+            padding-right: 10px;
+            margin-right: 20px;
+        }
+
+        label.dateEvent {
+            width: 31%;
+        }
+        input[type=date] {
+            width: 62%;
+        }
+
+        @media screen and (min-height: 1000px) and (max-height: 1368px) and (min-width: 768px) and (max-width: 912px) {
+            form {
+                width: 70%;
+            }
+            .form-group {
+                margin-bottom: 20px;
+            }
+            label {
+                font-size: larger !important;
+            }
+            input[type=text], input[type=date], textarea {
+                padding: 20px;
+                font-size: large;
+            }
+            textarea {
+                height: 100px;
+            }
+            .submitButton {
+                margin-top: 20px;
+            }
+            input[type=submit] {
+                padding: 18px 20px
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            label {
+                font-size: small;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            form {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            input[type=text], input[type=date], textarea {
+                padding: 8px;
+            }
+            label {
+                display: none;
+            }
+            .form-group {
+                flex-direction: column;
+            }
+            label.dateEvent {
+                width: 100%;
+            }
+            input[type=date] {
+                width: 100%;
+            } 
+        }
+        
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "header">
+            <div class = "companyLogo">
+                <img class = "logo" src="Images/WeddingMelodiesLogo.jpeg" alt = "Company Logo"/>
+            </div>
+            <div class = "topnav" id = "myTopnav">
+                <a class = "home" href="index.html">Home</a>
+                <a class = "team" href="Team.html">Team</a>
+                <a class = "songs" href="Songs.html">Songs</a>
+                <a class = "contactUs" href="ContactUs.html">Contact Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div class = "mainContent">
+            <form action="#" method="get">
+                <div class="form-group" >
+                    <label for="eventDate" class = "dateEvent">Date of Event</label>
+                    <input type="date" id="eventDate" name="eventDate">
+                    
+                </div>
+                <!-- <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location">
+                </div> -->
+                
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" name="emailAddress" placeholder="Email Address">
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNo">Phone Number</label>
+                    <input type="text" id="phoneNo" name="phoneNumber" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                </div>
+                <div class="submitButton">
+                    <input type="submit" value="Submit">
+                </div>
+              </form>
+        </div>
+        <div class = "footer">
+            <div class = copyrightText>
+                &#xa9 2023 Wedding Melodies Inc.
+            </div>
+            <div>
+                304 Newbury St &#9839 172, Boston, MA 02115
+            </div>
+            <div>
+                (617) 297-8854
+            </div>
+            <div>
+                contact@weddingmemories.com
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+</body>

@@ -1,0 +1,141 @@
+<!-- show the page and ask for the content which is not showing. 
+    Is it okay to display like that or should i show some content 
+-->
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Songs</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "myStyle.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <style>
+        /* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            
+        } */
+
+        .mainContent {
+            max-width: 100%;
+            overflow: hidden;
+            padding: 5px 20px 20px;
+        }
+
+        table {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 600px) {
+            table {
+                font-size: 12px;
+                word-break: break-all;
+            }
+        }
+        @media screen and (max-width: 280px) {
+            .mainContent {
+                overflow: auto;
+            }
+        }
+      </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "header">
+            <div class = "companyLogo">
+                <img class = "logo" src="Images/WeddingMelodiesLogo.jpeg" alt = "Company Logo"/>
+            </div>
+            <div class = "topnav" id = "myTopnav">
+                <a class = "home" href="index.html">Home</a>
+                <a class = "team" href="Team.html">Team</a>
+                <a class = "songs" href="Songs.html">Songs</a>
+                <a class = "contactUs" href="ContactUs.html">Contact Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div class="mainContent">
+            <table>
+                <thead>
+                <tr>
+                    <th>Song</th>
+                    <th>Artist</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Bohemian Rhapsody</td>
+                    <td>Queen</td>
+                </tr>
+                <tr>
+                    <td>We Will Rock You</td>
+                    <td>Queen</td>
+                </tr>
+                <tr>
+                    <td>Hotel California</td>
+                    <td>The Eagles</td>
+                </tr>
+                <tr>
+                    <td>Imagine</td>
+                    <td>John Lennon</td>
+                </tr>
+                <tr>
+                    <td>Hey Jude</td>
+                    <td>The Beatles</td>
+                </tr>
+                <tr>
+                    <td>Let It Be</td>
+                    <td>The Beatles</td>
+                </tr>
+                <tr>
+                    <td>Smells Like Teen Spirit</td>
+                    <td>Nirvana</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class = "footer">
+            <div class = copyrightText>
+                &#xa9 2023 Wedding Melodies Inc.
+            </div>
+            <div>
+                304 Newbury St &#9839 172, Boston, MA 02115
+            </div>
+            <div>
+                (617) 297-8854
+            </div>
+            <div>
+                contact@weddingmemories.com
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+</body>

@@ -1,0 +1,246 @@
+<!-- show the page and ask for the content which is not showing. 
+    Is it okay to display like that or should i show some content 
+-->
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Team</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "myStyle.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <style>
+        .mainContent {
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .member-list {
+            list-style: none;
+            /* padding-bottom: 30px; */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            padding-inline-start: 0px;
+            height: 100%;
+        }
+
+        .member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 10px;
+            justify-content: space-around;
+        }
+
+        .member-info {
+                width: 75%;
+        }
+
+        .member-image {
+            width: 28%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .member-name {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .member-bio {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 1050px) {
+            .member-image {
+                width: 31%;
+            }
+        }
+        
+        @media screen and (max-width: 1000px) {
+            .member-image {
+                width: 34%;
+            }
+            .member-info {
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 950px) {
+            .member-image {
+                width: 38%;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            /* .member-info {
+                width: 90%;
+            } */
+            .member-image {
+                width: 42%;
+            }
+        }
+
+        @media screen and (max-width: 840px) {
+            /* .member-info {
+                width: 75%;
+            } */
+            .member-image {
+                width: 47%;
+            }
+        }
+
+        @media screen and (max-width: 790px) {
+            /* .member-info {
+                width: 75%;
+            } */
+            .member-image {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 730px) {
+            /* .member-info {
+                width: 75%;
+            } */
+            .member-image {
+                width: 60%;
+            }
+        }
+        @media screen and (max-width: 730px) {
+            /* .member-info {
+                width: 75%;
+            } */
+            .member-image {
+                width: 60%;
+            }
+        }
+        @media screen and (max-width: 674px) {
+            .member-list {
+                /* margin-bottom: 12%; */
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .member-info {
+                width: 100%;
+            }
+            .member-image {
+                width: 100%;
+            }
+        }
+
+        /* @media screen and (max-width: 768px) {
+            .mainContent {
+                bottom: 50px;
+            }
+            .member {
+                width: 150px;
+            }
+        } */
+
+        /* @media screen and (max-width: 768px) {
+            .mainContent {
+                bottom: 50px;
+            }
+            .member {
+                width: 100%;
+                margin: 10px 0;
+            }
+            .member-list {
+                flex-wrap: wrap;
+                position: relative;
+                top: 72%;
+            }
+            .member-image {
+                width: 100%;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "header">
+            <div class = "companyLogo">
+                <img class = "logo" src="Images/WeddingMelodiesLogo.jpeg" alt = "Company Logo"/>
+            </div>
+            <div class = "topnav" id = "myTopnav">
+                <a class = "home" href="index.html">Home</a>
+                <a class = "team" href="Team.html">Team</a>
+                <a class = "songs" href="Songs.html">Songs</a>
+                <a class = "contactUs" href="ContactUs.html">Contact Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div class = "mainContent">
+            <ul class="member-list">
+                <li>
+                    <div class="member">
+                        <img src="Images/MeganPage.jpeg" alt="Member 1" class="member-image">
+                        <div class="member-info">
+                        <h3 class="member-name">Megan Page</h3>
+                        <p class="member-bio">
+                            man Welcome to Wedding Melodies, your premier destination for enchanting music and 
+                            creating unforgettable moments. As a renowned music band, we have been serving the 
+                            Boston, Massachusetts area and its surrounding regions for over 25 years. Our 
+                            commitment to excellence and our passion for creating the perfect soundtrack
+                            make us the ideal choice for your special day.
+                        </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="member">
+                        <img src="Images/JimHarper.jpeg" alt="Member 2" class="member-image">
+                        <div class="member-info">
+                        <h3 class="member-name">Jim Harper</h3>
+                        <p class="member-bio">
+                            woman Welcome to Wedding Melodies, your premier destination for enchanting music and 
+                            creating unforgettable moments. As a renowned music band, we have been serving the 
+                            Boston, Massachusetts area and its surrounding regions for over 25 years. Our 
+                            commitment to excellence and our passion for creating the perfect soundtrack
+                            make us the ideal choice for your special day.
+                        </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="member">
+                        <img src="Images/JohnDoe.jpeg" alt="Member 3" class="member-image">
+                        <div class="member-info">
+                        <h3 class="member-name">John Doe</h3>
+                        <p class="member-bio">
+                            athlete Welcome to Wedding Melodies, your premier destination for enchanting music and 
+                            creating unforgettable moments. As a renowned music band, we have been serving the 
+                            Boston, Massachusetts area and its surrounding regions for over 25 years. Our 
+                            commitment to excellence and our passion for creating the perfect soundtrack
+                            make us the ideal choice for your special day.
+                        </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class = "footer">
+            <div class = copyrightText>
+                &#xa9 2023 Wedding Melodies Inc.
+            </div>
+            <div>
+                304 Newbury St &#9839 172, Boston, MA 02115
+            </div>
+            <div>
+                (617) 297-8854
+            </div>
+            <div>
+                contact@weddingmemories.com
+            </div>
+        </div>
+    </div>
+</body>
